@@ -2,6 +2,8 @@ const passport = require('passport');
 const cookieSession = require('cookie-session');
 const { Strategy } = require('passport-google-oauth20');
 
+require('dotenv').config();
+
 const config = {
     CLIENT_ID: process.env.OAUTH_CLIENT_ID,
     CLIENT_SECRET: process.env.OAUTH_CLIENT_SECRET,
