@@ -19,7 +19,7 @@ app.use(helmet());
 initializePassport(app);
 app.use(
     cors({
-        origin: 'https://localhost:3000',
+        origin: 'http://localhost:3000',
     })
 );
 app.use(morgan('combined'));
